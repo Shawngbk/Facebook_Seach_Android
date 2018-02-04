@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.apple.hw9.BasicTabActivity"
+    >
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tbl_basic"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+        <!--You can create tabs in xml, but I personally prefer to add them
+       in the java code. More flexibility that way.
+        <android.support.design.widget.TabItem
+           android:text="Music"
+           />
+        <android.support.design.widget.TabItem
+           android:text="Movies"/>-->
+
+    </android.support.design.widget.TabLayout>
+
+    <TextView
+        android:id="@+id/lbl_basic_content"
+        android:layout_below="@id/tbl_basic"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textColor="@android:color/black" />
+
+</RelativeLayout>
